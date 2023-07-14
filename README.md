@@ -46,16 +46,16 @@ I performed multilinear regression, created a baseline model and tested assumpti
 #### Distribution of predictors
 Checked how the predictors are distributed using combined KDE and histogram plots.
 
-![Distribution](./Images/KDE_Hist_check_plot.png)
+![Distribution](./Images_md/KDE_Hist_check_plot.png)
 
 #### Linearity check
 Used scatter plots to check the relationship between the dependent and the independent variables.
 
-![Linearity](./Images/Linearity_check_Scatter_plot.png)
+![Linearity](./Images_md/Linearity_check_Scatter_plot.png)
 
 #### Created the Baseline model
 
-![Baseline](./Images/Model1.png)
+![Baseline](./Images_md/Model1.png)
 
 #### Tested assumptions of regression - Model 1
 <div align="justify">
@@ -83,7 +83,7 @@ Here I analysed whether the model satisfied the assumptions of homoskedasticity 
 
 ##### Normality check
         
-![Normality](./Images/Model1_QQ_plot.png)
+![Normality](./Images_md/Model1_QQ_plot.png)
 
 ### Observations - Baseline model
    <div align="justify">
@@ -114,11 +114,11 @@ From the above, it seemed like the outlier in Bedrooms did not make sense, given
     
 #### Checking distribution after removing outliers
 
-![Outlier2](./Images/Dist_after_outlier_removal.png)
+![Outlier2](./Images_md/Dist_after_outlier_removal.png)
 
 <div align="justify">
     
-The distributions have improved and are appearing more normal than before. 'Bedrooms' and 'Bathrooms' are seen to be categorical variables, all of which will be dealt with in the next step.
+The distributions have improved and are appearing more normal than before. 'Bedrooms' and 'Bathrooms' are seen to be categorical variables, which will be dealt with in the next step.
     </div>
 
 #### Dealing with categorical variables
@@ -133,7 +133,7 @@ I used one-hot encoding to convert all the categorical variables into dummies an
 I checked for multicollinearity using scatter and correlation matrices with corresponding subsequent analysis. I then dropped highly correlated columns (i.e., correlation greater than 0.75) before future analyses. In this case, they were the categorical value columns 'Cond_3' and 'Cond_4'.
       </div>
       
-![Multicoll](./Images/Multicoll_scatter_matrix.png)
+![Multicoll](./Images_md/Multicoll_scatter_matrix.png)
 
 #### Log transformation of independent variables
    <div align ="justify">
@@ -141,13 +141,13 @@ I checked for multicollinearity using scatter and correlation matrices with corr
 I performed log transformation of the variables 'Living_area', 'Lot_area' and 'Age', and visualised the results with a histogram and a scatter matrix.
          </div>
 
-![Log_hist](./Images/Log_transform_hist.png)
+![Log_hist](./Images_md/Log_transform_hist.png)
 
-![Log_scatter](./Images/Log_transform_scatter_matrix.png)
+![Log_scatter](./Images_md/Log_transform_scatter_matrix.png)
 
 #### Created Model 2
 
-![Model2](./Images/Model2_final.png)
+![Model2](./Images_md/Model2_final.png)
 
 #### Tested assumptions of regression - Model 2
    <div align="justify">
@@ -157,7 +157,7 @@ Here I analysed whether Model 2 satisfied the assumptions of linearity, homosked
         
 ##### Linearity check
 
-![Iter2_lin](./Images/Model2_Linearity_check_Scatter_plot.png)
+![Iter2_lin](./Images_md/Model2_Linearity_check_Scatter_plot.png)
 
 ##### Skedasticity check
 
@@ -169,7 +169,7 @@ Here I analysed whether Model 2 satisfied the assumptions of linearity, homosked
 
 ##### Normality check
 
-![Normality_2](./Images/Model2_QQ_plot.png)
+![Normality_2](./Images_md/Model2_QQ_plot.png)
 
 ### Observations: Model 2
    <div align = "justify">
@@ -194,7 +194,7 @@ For Model 4, I performed mean normalisation on the independent variables and ran
 
 #### Created Model 4
 
-![Model4](./Images/Model4_final.png)
+![Model4](./Images_md/Model4_final.png)
 
 #### Tested assumptions of regression - Model 4
 <div align="justify">
@@ -237,15 +237,15 @@ Here I performed both Train-Test splits and Cross-Validation on the final model.
         
 ##### Train-test split visualisations.
 
-![TTsplitMSE](./Images/Train_test_MSE.png)
+![TTsplitMSE](./Images_md/Train_test_MSE.png)
 
-![TTsplitR2](./Images/Train_test_R2.png)
+![TTsplitR2](./Images_md/Train_test_R2.png)
 
 ##### Cross validation visualisations
 
-![CrossMSE](./Images/Cross_val_MSE.png)
+![CrossMSE](./Images_md/Cross_val_MSE.png)
 
-![CrossR2](./Images/Cross_val_R2.png)
+![CrossR2](./Images_md/Cross_val_R2.png)
 
 <b>Accuracy of the model: 0.5400669334410992</b>
 
