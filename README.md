@@ -46,7 +46,7 @@ I performed multilinear regression, created a baseline model and tested assumpti
 #### Distribution of predictors
 Checked how the predictors are distributed using combined KDE and histogram plots.
 
-![Distribution](./Images/KDE_hist_check_plot.png)
+![Distribution](./Images/KDE_Hist_check_plot.png)
 
 #### Linearity check
 Used scatter plots to check the relationship between the dependent and the independent variables.
