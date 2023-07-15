@@ -57,7 +57,8 @@ Used scatter plots to check the relationship between the dependent and the indep
 ![Linearity](./Images_md/Linearity_check_Scatter_plot.png)
 
 #### Created the Baseline model
-The summary of OLS statistics from Model 1 is displayed below.
+The summary of OLS regression statistics from Model 1 is displayed below.
+
 
 ![Baseline](./Images_md/Model1.png)
 
@@ -153,7 +154,8 @@ I performed log transformation of the variables 'Living_area', 'Lot_area' and 'A
 ![Log_scatter](./Images_md/Log_transform_scatter_matrix.png)
 
 #### Created Model 2
-The summary of OLS statistics from Model 2 is displayed below.
+The summary of OLS regression statistics from Model 2 is displayed below.
+
 
 ![Model2](./Images_md/Model2_final.png)
 
@@ -206,7 +208,8 @@ For Model 4, I performed mean normalisation on the independent variables and ran
         </div>
 
 #### Created Model 4
-The summary of OLS statistics from Model 4 is displayed below.
+The summary of OLS regression statistics from Model 4 is displayed below.
+
 
 ![Model4](./Images_md/Model4_final.png)
 
