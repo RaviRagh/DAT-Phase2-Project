@@ -92,8 +92,11 @@ Here I analysed whether the model satisfied the assumptions of homoskedasticity 
    <div align="justify">
     
 1. The adjusted R-squared value of 0.618, the high F-Statistic and the corresponding significant p-values appear to indicate some linear relationship between the chosen independent and dependent variables, however, this may be misleading in a baseline model.
+    
 2. There is a combination of continuous and categorical variables. It is safe to say that "Floors', 'Condition' and 'Grade' are categorical variables and need to be transformed accordingly. Further, during the next iteration, one needs to see if 'Bedrooms' and 'Bathrooms' will also need to be considered categorical variables.
+    
 3. With the exception of 'Age', the distribution of all continous variables appear to be heavily right-skewed, probably because of outliers (as can be seen from the scatter plots). Outliers will need to be eliminated.
+    
 4. It appears that the homoskedasticity and normality assumptions cannot be satisfied in this iteration, given the skew of the Q-Q plot and the high values for the JB test, kurtosis and skewness.
     </div>
     
@@ -178,10 +181,15 @@ Here I analysed whether Model 2 satisfied the assumptions of linearity, homosked
    <div align = "justify">
     
 1. The adjusted R-squared value has reduced, however there may still be linearity between our dependent and the three independent variables.
+    
 2. The skew and kurtosis values have reduced dramatically and are closer to values representing normal distribution.
+    
 3. There are a few categorical variables whose p-values indicate that they are not significant and can be eliminated in the next iteration.
+    
 4. 'Living area' appears to show some linearity with 'Price', but the linear relationship between 'Price' and 'Lot_area' and 'Age' is still not well-defined.
+    
 5. 'Living area' and 'Lot area' still show heteroskedasticity, whilst 'Age' appears to show homoskedasticity.
+    
 6. The normality plot has improved and shows a more linear relationship between Theoretical and Sample quantiles, indicating that further tweaking of the model might improve this feature.
     </div> 
 
@@ -224,9 +232,12 @@ Here I analysed whether Model 4 satisfied the assumptions of linearity, homosked
 ### Observations: Models 3 and 4
 <div align ="justify">
     
-1. There is no significant improvement in the Adjusted R-Squared value in either Model 3 or Model 4, however the condition number has significantly reduced, especially after feature scaling, suggesting that any multicollinearity or other errors indicated in earlier models have been eliminated. Removal of certain columns had almost the same effect as feature scaling (also see note below). 
+1. There is no significant improvement in the Adjusted R-Squared value in either Model 3 or Model 4, however the condition number has significantly reduced, especially after feature scaling, suggesting that any multicollinearity or other errors indicated in earlier models have been eliminated. Removal of certain columns had almost the same effect as feature scaling (also see note below).
+    
 2. There is no significant change in the assumptions of regression from Model 2, indicating that the relationship between the independent and dependent variables appears to be reasonably robust. The skewness and kurtosis levels are within tolerated limits.
+    
 3. The coefficients for the constant and the three independent variables are all in the exact centre for the narrow ranges of each of the 95% confidence intervals. This appears to be true for the categorical variables as well. This corroborates Point 2 above. 
+    
 4. The coefficients for 'Living area' and 'Age' are positive, indicating that an increase in either causes an increase in sale price, whilst the opposite is true of 'Lot area' (with a negative coefficient). 
 <p>
 <b>Note: I used various permutations of column removals/feature scaling and reran models each time, but was unable to find any model that improved the existing results. In fact, most of those models had a much lower Adjusted R-squared value and increased skew and kurtosis. I have not included those iterations herein. Model 4 will be the final model used in this study.</b>
@@ -255,8 +266,10 @@ Here I performed both Train-Test splits and Cross-Validation on the final model.
 ### Conclusions
    <div align="justify">
     
-1. The final model is overfitting as evidenced by the significant differences in R-Squared and Mean Squared Error values between the Train and Test datasets. Interestingly, cross-fold validation appears to show that the model is fitted correctly but that can be explained by the fact that it does not shuffle the data before splitting it into folds. This might mean that there are some aspects of the splits that are not representative of what the actual training data and test data are.
+1. The final model is overfitting as evidenced by the significant differences in R-Squared and Mean Squared Error values between the Train and Test datasets. Interestingly, cross-fold validation appears to show that the model is fitted correctly but that can be explained by the fact that it does not shuffle the data before splitting it into folds. This might mean that there are some aspects of the splits that are not representative of the actual training data and test data.
+    
 2. The model will predict correctly around 54% of the time, which is acceptable since it is an inference model.
+    
 3. The best indicator for a good sale price for a property appears to be the size of the living area. The age of the property might be a factor although the spread suggests that some older properties also sell at high prices. This could possibly be because the data includes heritage properties, etc. The area of the lot, and the number of bedrooms and bathrooms has an inverse relationship with sale prices. It is possible that bigger lots require more maintenance or development. Buyers might be looking for fewer bedrooms in a larger living space. It is logical to assume that the better the condition and grade of the property, the better the sale value. 
     </div>
     
