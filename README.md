@@ -10,7 +10,7 @@
 #### The brief
 Use regression modeling to analyze house sales in a northwestern US county.
 
-![KingCoFlag](./Images_md_kc_flag.png)
+![KingCoFlag](./Images_md/kc_flag.png)
 
 #### Business Problem
 Which factors influence and can help improve King County house sales?
