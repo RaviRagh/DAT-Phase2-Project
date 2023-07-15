@@ -65,21 +65,21 @@ Here I analysed whether the model satisfied the assumptions of homoskedasticity 
     
 ##### Skedasticity check
 
-![Bedrooms](./Images/Var_sked_Model1_Bedrooms.png)
+![Bedrooms](./Images_md/Var_sked_Model1_Bedrooms.png)
 
-![Bathrooms](./Images/Var_sked_Model1_Bathrooms.png)
+![Bathrooms](./Images_md/Var_sked_Model1_Bathrooms.png)
 
-![Living](./Images/Var_sked_Model1_Living_area.png)
+![Living](./Images_md/Var_sked_Model1_Living_area.png)
 
-![Lot](./Images/Var_sked_Model1_Lot_area.png)
+![Lot](./Images_md/Var_sked_Model1_Lot_area.png)
 
-![Floors](./Images/Var_sked_Model1_Floors.png)
+![Floors](./Images_md/Var_sked_Model1_Floors.png)
 
-![Condition](./Images/Var_sked_Model1_Condition.png)
+![Condition](./Images_md/Var_sked_Model1_Condition.png)
 
-![Grade](./Images/Var_sked_Model1_Grade.png)
+![Grade](./Images_md/Var_sked_Model1_Grade.png)
 
-![Age](./Images/Var_sked_Model1_Age.png)
+![Age](./Images_md/Var_sked_Model1_Age.png)
 
 ##### Normality check
         
@@ -161,11 +161,11 @@ Here I analysed whether Model 2 satisfied the assumptions of linearity, homosked
 
 ##### Skedasticity check
 
-![Sked_2_Living](./Images/Var_sked_Model2_Living_area.png)
+![Sked_2_Living](./Images_md/Var_sked_Model2_Living_area.png)
 
-![Sked_2_Lot](./Images/Var_sked_Model2_Lot_area.png)
+![Sked_2_Lot](./Images_md/Var_sked_Model2_Lot_area.png)
 
-![Sked_2_Age](./Images/Var_sked_Model2_Age.png)
+![Sked_2_Age](./Images_md/Var_sked_Model2_Age.png)
 
 ##### Normality check
 
