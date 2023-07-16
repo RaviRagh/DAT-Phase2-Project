@@ -8,7 +8,7 @@
 ### Overview
 
 #### The brief
-Use multiple linear regression modeling to analyze house sales in a northwestern US county.
+Use multiple linear regression modeling to analyse house sales in a northwestern US county.
 
 ![KingCoFlag](./Images_md/kc_flag.png)
 
@@ -97,7 +97,7 @@ Here I analysed whether the model satisfied the assumptions of homoskedasticity 
     
 2. There is a combination of continuous and categorical variables. It is safe to say that "Floors', 'Condition' and 'Grade' are categorical variables and need to be transformed accordingly. Further, during the next iteration, one needs to see if 'Bedrooms' and 'Bathrooms' will also need to be considered categorical variables.
     
-3. With the exception of 'Age', the distribution of all continous variables appear to be heavily right-skewed, probably because of outliers (as can be seen from the scatter plots). Outliers will need to be eliminated.
+3. With the exception of 'Age', the distribution of all continuous variables appear to be heavily right-skewed, probably because of outliers (as can be seen from the scatter plots). Outliers will need to be eliminated.
     
 4. It appears that the homoskedasticity and normality assumptions cannot be satisfied in this iteration, given the skew of the Q-Q plot and the high values for the JB test, kurtosis and skewness.
     </div>
@@ -184,7 +184,7 @@ Here I analysed whether Model 2 satisfied the assumptions of linearity, homosked
 ### Observations: Model 2
    <div align = "justify">
     
-1. The adjusted R-squared value has reduced, however there may still be linearity between our dependent and the three independent variables.
+1. The adjusted R-squared value has reduced, however there may still be linearity between the dependent and the three independent variables.
     
 2. The skew and kurtosis values have reduced dramatically and are closer to values representing normal distribution.
     
@@ -282,5 +282,5 @@ Here I performed both Train-Test splits and Cross-Validation on the final model.
 ### Actionable insight
    <div align="justify">
     
-The two main co-efficients I would choose to infer property sale prices in King County are "Living_area' and 'Lot_area'. 
+The two main co-efficients I would choose to infer property sale prices in King County are 'Living_area' and 'Lot_area'. 
         </div>
